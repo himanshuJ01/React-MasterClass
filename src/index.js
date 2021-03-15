@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const names = [
+  "himanshu"," janbandhu"
+]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App data={names} />
   </React.StrictMode>,
   document.getElementById('root')
 );
