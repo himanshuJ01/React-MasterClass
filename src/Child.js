@@ -1,17 +1,32 @@
 import React from 'react';
 
 class Child extends React.Component {
-    
-    render(){
-      const tasks = this.props.tasks.map((i, index) => {
-         return <li key={index}>{i}</li>
-      });
-        return(
-           <>
-          <ul>{tasks}</ul>
-           </>
-        )
+    constructor(props){
+        super(props);
+        this.removeItem = this.removeItem.bind(this);
     }
-}
+    removeItem(index) {
+        this.props.removeItem(index);
+    }
+    render(){
+        return (
+         <ol>
+         {this.props.tasks.map((item, index) => {
+         return ( 
+         <li key={index}>
+             {item} 
+         <button onClick={() => this.removeItem(index)}>
+         Delete
+         </button>
+         </li>
+         );
+         })}
+         </ol>
+        )
+        }
+    }
+      
+       
+
 
 export default Child;
