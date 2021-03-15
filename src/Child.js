@@ -10,8 +10,10 @@ class Child extends React.Component {
     render(){
 
         return(
-           
+           <>
            <h1>{this.props.value} </h1> 
+           <h1>{this.props.text} </h1> 
+           </>
         )
 
     }

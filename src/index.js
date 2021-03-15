@@ -5,9 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-const names = [
-  "himanshu"," janbandhu"
-]
 
 ReactDOM.render(
   <React.StrictMode>
