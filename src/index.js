@@ -11,7 +11,7 @@ const names = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <App data={names} />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
